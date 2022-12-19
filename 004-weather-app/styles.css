@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    --viola: #4f3057;
+    --secondary: #d19d8e;
+    --dark: #977d87;
+    --light-turq: #83d3cf;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: Ubuntu;
+    font-weight: 400;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--viola);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-turq)
+}
+
+.weather-container {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+
+    border-radius: 1rem;
+    transition: all 400ms ease-in-out 200ms;
+}
+
+.location {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 2rem;
+    color: var(--secondary);
+}
+
+.location input {
+    width: 100%;
+    padding: .5rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--secondary);
+    outline: none;
+    font-size: 1.5rem;
+    color: var(--secondary);
+
+}
+
+.location input:focus {
+    border-bottom: 1px solid var(--light-turq);
+}
+
+.location input::placeholder {
+    color: var(--secondary);
+    opacity: .4;
+}
+
+.location:focus-within {
+    color: var(--light-turq);
+}
+
+.temperature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5rem;
+}
+
+.details {
+    padding: 0 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: flex-end;
+    gap: .5rem;
+    font-size: 2rem;
+}
+
+.detail-value {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-value span:first-child {
+    font-size: 1.3rem;
+}
+
+.detail-value span:last-child {
+    font-size: .8rem;
+}
+
+.hidden {
+    height: 0;
+    opacity: 0;
+    transition: all 500ms ease-in-out 400ms;
+}

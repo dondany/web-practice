@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgb(57,25,117);
+    background: radial-gradient(circle, rgba(57,25,117,1) 0%, rgba(45,10,80,1) 100%);    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    width: 7rem;
+    height: 7rem;
+    font-size: 4rem;
+    font-family: 'Bebas Neue';
+    color: #efebfa;
+    border: 4px solid #ffffffe5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input, button {
+    height: 3rem;
+    width: 100%;
+    border-radius: 2rem;
+    margin-bottom: 12px;
+    border: none;
+}
+
+.input {
+    padding: 1rem;
+    border: 2rem;
+    background-color: #ffffff21;
+}
+
+.input i {
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.input:focus-within {
+    background-color: #ffffff54;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color:  #efebfa;
+    font-weight: 500;
+}
+
+input::placeholder {
+    color:  #efebfa;
+}
+
+button {
+    background-color: #FD3267;
+    transition: all 150ms ease-in-out 0s;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #c72751 ;
+    color: #fff;
+}
+
+.forgot-pass {
+    color: #efebfa;
+}

@@ -1,0 +1,12 @@
+Color palletes:
+https://huemint.com/
+
+Icons:
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+APIs:
+Weather: https://openweathermap.org/
+
+Placeholders:
+    User Avatars
+        https://i.pravatar.cc/150

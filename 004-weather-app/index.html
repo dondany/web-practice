@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <section class="weather-container" id="weather-container">
+        <div class="location">
+            <i class='bx bxs-map'></i>
+            <input onenter type="text" id="location-input" placeholder="Enter Your Location">
+        </div>
+        <div class="temperature hidden" id="temperature">
+            <div class="icon">
+                <i class='bx bx-cloud' id="weatherIcon"></i>
+            </div>
+            <div class="degrees" id="degrees">
+                
+            </div>
+        </div>
+        <div class="details hidden" id="details">
+            <div class="detail-item humidity">
+                <i class='bx bx-water'></i>
+                <div class="detail-value">
+                    <span id="humidity"></span>
+                    <span>Humidity</span>
+                </div>
+            </div>
+            <div class="detail-item pressure">
+                <i class='bx bxs-down-arrow-alt' ></i>
+                <div class="detail-value">
+                    <span id="pressure"></span>
+                    <span>Pressure</span>
+                </div>
+            </div>
+            <div class="detail-item wind">
+                <i class='bx bx-wind'></i>
+                <div class="detail-value">
+                    <span id="wind"></span>
+                    <span>Wind</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
