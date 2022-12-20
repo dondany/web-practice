@@ -9,6 +9,10 @@
     font-size: 14px;
 }
 
+body {
+    background-color: #6a6f7e;
+}
+
 .main-container {
     width: 100%;
     height: 100vh;
@@ -19,19 +23,16 @@
 .body-container {
     display: flex;
     flex-grow: 1;
-}
-
-.content-container {
-    flex-grow: 1;
+    color: #fff;
 }
 
 header {
     width: 100%;
-    height: 60px;
+    height: 50px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 15px 0 0;
     background-color: #24252a;
 }
 
@@ -50,7 +51,7 @@ li, a, button {
 }
 
 .nav-links li a {
-    transition: all 0.3s ease 0s;
+    transition: all 0.2s ease 0s;
 }
 
 .nav-links li a:hover {
@@ -65,14 +66,15 @@ li, a, button {
 }
 
 .avatar {
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
 }
 
 button {
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
+    padding: 5px 10px;
+    background-color: #ffb127;
+    color: black;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -80,15 +82,22 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1rem;
 }
 
 button:hover {
-    background-color: rgba(0, 136, 169, 0.8);
+    background-color: rgba(255, 177, 39, 0.8);
+}
+
+button .fa {
+    height: 1rem;
+    margin-right: 1px;
 }
 
 .logo {
     height: 60px;
-    color: #fff;
+    width: 280px;
+    color: #ffb127;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,7 +127,11 @@ button:hover {
     flex-grow: 1;
 }
 
-.side-links li {
+.side-links li .fa:last-child {
+    margin-left: auto;
+}
+
+.side-links li .item {
     padding: 10px 0 10px 20px;
     display: flex;
     align-items: center;
@@ -126,29 +139,111 @@ button:hover {
     transition: all 0.5s ease 0s;
 }
 
-.side-links li .fa:last-child {
-    margin-left: auto;
+.side-links li .sub-item {
+    padding: 5px 0 5px 50px;
+    background-color: #555662;
+    transition: all 0.2s ease 0s;
 }
 
-.side-links li:hover {
-    background-color: #0088a9;
+.side-links li .sub-item:hover {
+    background-color: #c98b1f;
+    cursor: pointer;
+}
+
+.side-links li .sub-item:hover a {
+    color: black;
+}
+
+.side-links li .item:hover {
+    cursor: pointer;
+    background-color: #ffb127;
+}
+
+.side-links li .item:hover a {
+    color: black;
+}
+
+.side-links li .item:hover .fa {
+    fill: black;
 }
 
 .fa {
-    width: 1.2rem;
-    height: 1.2rem;
-    fill: #fff;
+    width: 1.4rem;
+    height: 1.4rem;
     margin-right: 10px;
 }
 
-.fa-btn {
-    height: 1rem;
-    margin-right: 5px;
+.side-links .fa {
+    fill: #fff;
 }
 
 .side-links .side-link-bottom {
     margin-top: auto;
 }
 
+/*content-container*/
 
+.frame-container {
+    padding: 25px;
+    background-color: #24252a;
+    border-radius: 6px;
+    height: 100%;
+}
 
+.breadcrumb {
+    font-size: 0.8rem;
+    color: #d8e2ff;
+    padding-left: 5px;
+}
+
+.title {
+    font-size: 2rem;
+    color: #ffb127;
+}
+
+.content-container {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mid {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+}
+
+.fc-list {
+    width: 80%;
+    list-style-type: none;
+}
+
+.fc-header {
+    padding: 0 15px 0 15px;
+    margin: 0 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fc-list li div:first-child {
+    width: 40px;
+}
+
+.fc-cell {
+    width: 40%;
+}
+
+.fc-item {
+    display: flex;
+    background-color: #d8e2ff;
+    color: #24252a;
+    padding: 15px;
+    justify-content: space-between;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.fc-header {
+    border-radius: 5px;
+}
