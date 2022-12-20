@@ -51,7 +51,7 @@ li, a, button {
 }
 
 .nav-links li a {
-    transition: all 0.2s ease 0s;
+    transition: all 0.1s ease 0s;
 }
 
 .nav-links li a:hover {
@@ -136,13 +136,13 @@ button .fa {
     display: flex;
     align-items: center;
     cursor: pointer;
-    transition: all 0.5s ease 0s;
+    transition: all 0.1s ease 0s;
 }
 
 .side-links li .sub-item {
     padding: 5px 0 5px 50px;
     background-color: #555662;
-    transition: all 0.2s ease 0s;
+    transition: all 0.1s ease 0s;
 }
 
 .side-links li .sub-item:hover {
@@ -224,6 +224,7 @@ button .fa {
     margin: 0 10px 0 10px;
     display: flex;
     justify-content: space-between;
+    color: #ffb127;
 }
 
 .fc-list li div:first-child {
@@ -242,6 +243,11 @@ button .fa {
     justify-content: space-between;
     margin: 10px;
     border-radius: 5px;
+}
+
+.fc-item:hover {
+    cursor: pointer;
+    background-color: rgba(216, 226, 255, 0.9);
 }
 
 .fc-header {
