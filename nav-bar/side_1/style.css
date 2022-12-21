@@ -90,8 +90,7 @@ button:hover {
 }
 
 button .fa {
-    height: 1rem;
-    margin-right: 1px;
+    margin-right: 2px;
 }
 
 .logo {
@@ -132,44 +131,36 @@ button .fa {
 }
 
 .side-links li .item {
-    padding: 10px 0 10px 20px;
+    padding: 20px 0 20px 20px;
     display: flex;
     align-items: center;
     cursor: pointer;
-    transition: all 0.1s ease 0s;
+    transition: all 0.2s ease 0s;
+    border-left: 5px solid rgba(0, 0, 0, 0);
 }
 
 .side-links li .sub-item {
     padding: 5px 0 5px 50px;
     background-color: #555662;
-    transition: all 0.1s ease 0s;
+    transition: all 0.2s ease 0s;
+    border-left: 5px solid rgba(0, 0, 0, 0);
 }
 
 .side-links li .sub-item:hover {
-    background-color: #c98b1f;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-left: 5px solid #ffb127;
     cursor: pointer;
-}
-
-.side-links li .sub-item:hover a {
-    color: black;
 }
 
 .side-links li .item:hover {
     cursor: pointer;
-    background-color: #ffb127;
-}
-
-.side-links li .item:hover a {
-    color: black;
-}
-
-.side-links li .item:hover .fa {
-    fill: black;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-left: 5px solid #ffb127;
 }
 
 .fa {
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 1.3rem;
+    height: 1.3rem;
     margin-right: 10px;
 }
 
@@ -227,12 +218,17 @@ button .fa {
     color: #ffb127;
 }
 
-.fc-list li div:first-child {
-    width: 40px;
+
+.fc-row .fc-cell {
+    width: 40%;
 }
 
-.fc-cell {
-    width: 40%;
+.fc-row .fc-cell:first-child {
+    width: 10%;
+}
+
+.fc-row .fc-cell:last-child {
+    width: 10%;
 }
 
 .fc-item {
