@@ -5,12 +5,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-weight: 500;
     font-size: 14px;
 }
 
 body {
-    background-color: #6a6f7e;
+    background-color: #f3f3f3;
 }
 
 .main-container {
@@ -72,11 +71,11 @@ li, a, button {
 }
 
 button {
-    padding: 5px 10px;
+    padding: 8px 10px;
     background-color: #ffb127;
     color: black;
     border: none;
-    border-radius: 50px;
+    border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     display: flex;
@@ -110,7 +109,7 @@ button .fa {
 }
 
 .side-bar {
-    background-color: #31323a;
+    background-color: #333341;
     width: 280px;
     display: flex;
     flex-direction: column;
@@ -175,38 +174,38 @@ button .fa {
 /*content-container*/
 
 .frame-container {
-    padding: 25px;
-    background-color: #24252a;
-    border-radius: 6px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
     height: 100%;
+}
+
+.content-header {
+    margin-bottom: 20px;
 }
 
 .breadcrumb {
     font-size: 0.8rem;
-    color: #d8e2ff;
-    padding-left: 5px;
+    color: #646464;
+    cursor: pointer;
 }
 
 .title {
-    font-size: 2rem;
-    color: #ffb127;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    padding-left: 10px;
 }
 
 .content-container {
     flex-grow: 1;
-    padding: 20px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
 }
 
-.mid {
-    display: flex;
-    padding: 40px;
-    justify-content: center;
-}
-
 .fc-list {
-    width: 80%;
+    width: 100%;
     list-style-type: none;
 }
 
@@ -215,9 +214,9 @@ button .fa {
     margin: 0 10px 0 10px;
     display: flex;
     justify-content: space-between;
-    color: #ffb127;
+    color: black;
+    font-weight: 700;
 }
-
 
 .fc-row .fc-cell {
     width: 40%;
@@ -233,19 +232,46 @@ button .fa {
 
 .fc-item {
     display: flex;
-    background-color: #d8e2ff;
+    background-color: #e5e5e5;
     color: #24252a;
     padding: 15px;
     justify-content: space-between;
-    margin: 10px;
+    margin: 10px 0;
     border-radius: 5px;
 }
 
 .fc-item:hover {
     cursor: pointer;
-    background-color: rgba(216, 226, 255, 0.9);
+    background-color: #d3d3d3;
 }
 
 .fc-header {
     border-radius: 5px;
 }
+
+.btn-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.fc-list-top {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.fc-list-top input {
+    width: 300px;
+    height: 40px;
+    border: 2px solid rgba(169, 169, 169, 0.29);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.add-fc {
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
