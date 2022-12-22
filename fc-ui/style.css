@@ -296,6 +296,7 @@ button .fa {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: default;
 }
 
 .modal-header {
@@ -327,14 +328,27 @@ button .fa {
     background-color: #fff;
     border-radius: 5px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
     transition: all 0.3s ease 0s;
+    position: relative;
+}
+
+.fc-preview-header {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 0.8rem;
+}
+
+.fc-preview-text {
+    font-size: 1.5rem;
 }
 
 .fc-preview:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .modal-footer {
