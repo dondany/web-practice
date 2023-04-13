@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>006 - To Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <section class="to-do-section">
+        <div class="to-do-wrapper">
+            <h2 class="title">To Do List</h2>
+            <div class="add-item">
+                <input type="text" id="add-item-input" placeholder="Add New Item">
+                <button class="add-item-btn" onClick="addNew()">
+                    <i class='bx bx-plus'></i>
+                </button>
+            </div>
+            <ul class="to-do-list" id="to-do-list">
+                <li class="to-do-item" onClick="checkItem(this)">
+                    <div class="check-btn hidden">
+                        <i class='bx bxs-check-circle'></i>
+                    </div>
+                    <span>Do one project</span>
+                    <button class="delete-btn" onClick="deleteItem(event, this)">
+                        <i class='bx bx-x'></i>
+                    </button>
+                </li>
+                <li class="to-do-item" onClick="checkItem(this)">
+                    <div class="check-btn hidden">
+                        <i class='bx bxs-check-circle'></i>
+                    </div>
+                    <span>Do the groceries</span>
+                    <button class="delete-btn" onClick="deleteItem(event, this)">
+                        <i class='bx bx-x'></i>
+                    </button>
+                </li>
+                <li class="to-do-item" onClick="checkItem(this)">
+                    <div class="check-btn hidden">
+                        <i class='bx bxs-check-circle'></i>
+                    </div>
+                    <span>Walk the dog</span>
+                    <button class="delete-btn" onClick="deleteItem(event, this)">
+                        <i class='bx bx-x'></i>
+                    </button>
+                </li>
+                <li class="to-do-item hidden-hard" onClick="checkItem(this)">
+                    <div class="check-btn hidden">
+                        <i class='bx bxs-check-circle'></i>
+                    </div>
+                    <span></span>
+                    <button class="delete-btn" onClick="deleteItem(event, this)">
+                        <i class='bx bx-x'></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>

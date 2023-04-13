@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    --sage: #BCC794;
+    --beige: #e9edc9ff;
+    --cornsilk: #fefae0ff;
+    --papaya-whip: #faedcdff;
+    --buff: #d4a373ff;
+    --copper: #AC7035;
+
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Roboto';
+    line-height: 1.5;
+    color: #fff;
+}
+
+body {
+    padding-top: 100px;
+    background: var(--papaya-whip);
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.to-do-wrapper {
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    color: var(--buff);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.to-do-list {
+    min-width: 360px;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.to-do-item {
+    background: var(--cornsilk);
+    padding: 1rem;
+    color: var(--buff);
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.to-do-item i {
+    font-size: 1.3rem;
+}
+
+.to-do-item span {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+button {
+    border: none;
+    background: transparent;
+}
+
+.to-do-item:hover .delete-btn {
+    opacity: 1;
+}
+
+.delete-btn {
+    margin-left: auto;
+    opacity: 0;
+    transition: all 350ms ease-in-out;
+}
+
+.delete-btn:hover i{
+    color: var(--copper);
+    cursor: pointer;
+}
+
+.delete-btn i {
+    font-size: 1.5rem;
+    color: var(--buff);
+}
+
+.check-btn {
+    color: var(--sage);
+    transition: opacity 150ms ease-in-out 0s;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.hidden + span {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.add-item {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0 0 0 1rem;
+}
+
+.add-item-btn {
+    width: 3rem;
+    height: 3rem;
+    margin-left: auto;
+    background: var(--cornsilk);
+    font-size: 2rem;
+    color: var(--buff);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 300ms ease-in-out;
+}
+
+.add-item-btn:hover {
+    background: var(--buff);
+    color: var(--cornsilk);
+}
+
+#add-item-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--buff);
+    outline: none;
+    font-size: 1.2rem;
+    padding: 8px;
+    color: var(--copper);
+}
+
+#add-item-input::placeholder {
+    color: var(--copper);
+    opacity: .5;
+}
+
+.hidden-hard {
+    opacity: 0;
+    height: 0;
+    transform: translateX(50%);
+}
