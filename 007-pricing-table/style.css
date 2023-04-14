@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    --bg: #E9EAEC;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    line-height: 1.5;
+}
+
+body {
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-table {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.pricing-table h1 {
+    color: var(--secondary);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.plan-wrapper {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    min-height: 360px;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 6px 6px 10px 0px rgba(209, 218, 227, 1);
+}
+
+.plan-header {
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    
+}
+
+.plan-name {
+    display: flex;
+    justify-content: flex-end;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.plan-cost {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.plan-value {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.plan-currency {
+    margin-bottom: auto;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.plan-features {
+    padding: 1rem;
+}
+
+.plan-features ul {
+    list-style: none;
+    font-weight: 500;
+    color: var(--secondary);
+}
+
+.plan-features ul li {
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+}
+
+.plan-features ul li i {
+    font-size: 1.6rem;
+    color: #43CBFF;
+    margin-right: .5rem;
+}
+
+.plan-bottom {
+    margin-top: auto;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.select-btn {
+    border: none;
+    background: transparent;
+    border: 1px solid #43CBFF;
+    padding: .5rem 3rem;
+    border-radius: .4rem;
+    color: #43CBFF;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background 200ms ease-in-out;
+}
+
+.select-btn:hover {
+    cursor: pointer;
+    background: #43CBFF;
+    color: #fff;
+}
